@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oxygen:wght@300;400;700&family=Prata&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&family=Viga&display=swap');
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #F0F0F0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Estilização das Fontes*/
+h1 {
+    font-family: "Bebas Neue", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+p {
+    font-family: "Rufina", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+strong {
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*Estilização da navegação*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 15px 15px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    background-color: white;
+}
+
+.logo {
+    padding-right: 30px;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-links-container {
+    display: flex; 
+    justify-content: flex-start;
+    flex-grow: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.nav-links-container li {
+    display: inline-block;
+    padding: 0px 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black; 
+    display: inline-block; 
+    position: relative; 
+    font-size: 16px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-links-container ul li a:hover {
+    color: #6A0DAD;
+    font-weight: bold;
+}
+
+.nav-links-container ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #9B59B6; 
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.nav-links-container ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 22px;
+}
+
+.icons i {
+    color: #6A0DAD;
+    font-size: 28px;
+}
+
+@media(max-width: 768px) {
+    header {
+        margin: 10px;
+        padding: 8px 8px;
+        border-radius: 15px;
+        height: 40px;
+    }
+
+    .logo {
+        padding-right: 15px;
+        font-size: 14px;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links-container {
+        display: none; 
+    }
+}
+
+@media(max-width: 480px) {
+    header {
+        margin: 5px;
+        padding: 8px;
+        height: 35px;
+    }
+
+    .logo {
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    .nav-links-container {
+        display: none; 
+    }
+}
+
+/* Estilização do botão de rolar para o topo */
+#scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: #9B59B6;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none; 
+    z-index: 1000; 
+    transition: opacity 0.3s ease;
+    }
+    
+#scrollToTopButton:hover {
+    background-color: #0056b3;
+    }
+    
+#scrollToTopButton:focus {
+    outline: none;
+    }
+
+@media(max-width: 768px) {
+    #scrollToTopButton {
+        bottom: 20px;
+        right: 40px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+/* Estilização seção About */
+
+#about {
+    background-color: #F0F0F0;
+}
+
+.title-about {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    height: auto;
+    padding: 20px;
+    gap: 120px;
+}
+
+.photo {
+    position: relative; 
+    background-image: url(img/photo.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    height: 250px; 
+    width: 18vw; 
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.photo::after {
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+}
+
+.photo:hover::after {
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.photo:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 40vw;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.5;
+    text-align: justify; 
+}
+
+.text h3 {
+    text-align: center;
+}
+
+.descripion p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw; 
+    margin: 0;
+}
+
+
+@media(max-width: 1024px) {
+    .about-container {
+        gap: 50px; /* Menor espaçamento entre os itens em telas menores */
+    }
+
+    .photo {
+        width: 25vw; /* Reduz a largura da imagem em telas menores */
+        height: 30vw; /* Ajusta a altura da imagem */
+    }
+
+    .text {
+        width: 45vw; /* Ajusta a largura do texto */
+    }
+
+    .text h3 {
+        font-size: 28px; /* Ajusta o tamanho da fonte do título */
+    }
+
+    .descripion p {
+        width: 40vw; /* Ajusta o tamanho do parágrafo */
+    }
+}
+
+
+@media(max-width: 768px) {
+    .about-container {
+        gap: 30px;
+        flex-direction: column; /* Coloca os itens em coluna em telas pequenas */
+        align-items: center;
+    }
+
+    .photo {
+        width: 60vw; /* Aumenta a largura da foto para ocupar mais espaço */
+        height: 40vw; /* Ajusta a altura */
+    }
+
+    .text {
+        width: 80vw; /* Torna o texto maior em telas menores */
+        text-align: center;
+    }
+
+    .text h3 {
+        font-size: 24px; /* Reduz o tamanho do título */
+    }
+
+    .descripion p {
+        width: 80vw; /* Ajusta a largura do parágrafo */
+    }
+}
+
+
+@media(max-width: 480px) {
+    .title-about {
+        font-size: 28px; /* Diminui o tamanho da fonte do título */
+    }
+
+    .photo {
+        width: 80vw; /* Foto ocupa quase toda a largura da tela */
+        height: 60vw; /* Ajusta a altura */
+    }
+
+    .text {
+        width: 90vw; /* Texto ocupa quase toda a tela */
+    }
+
+    .text h3 {
+        font-size: 20px; /* Ajuste no tamanho do título */
+    }
+
+    .descripion p {
+        width: 90vw; /* Ajuste no tamanho do parágrafo */
+    }
+}
+
+/*Estilização da seção de education e experience*/
+.education-experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    height: auto;
+    padding: 20px;
+    gap: 120px;
+    background-color: white;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 40vw; 
+    align-items: flex-start; 
+    gap: 10px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 40vw;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.5;
+    text-align: justify; 
+
+}
+
+.title-education h3 {
+    border-top: 2px solid #9B59B6;
+    border-bottom: 2px solid #9B59B6;
+    margin: 20px;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+@media(max-width: 768px) {
+    .education-experience {
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+    .education-container, .experience-container {
+        width: 90vw; 
+    }
+}
+
+/*Estilização da seção Projetcs*/
+
+.projects-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; 
+    padding: 20px;
+    align-items: center; 
+}
+
+.project01, .project02, .project03 {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #a992b6;
+    padding: 30px;
+}
+
+/* Estilo para o swiper (Carrosel de imagens) */
+.swiper {
+    width: 100%;
+    height: 400px; 
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    background-color: #a992b6;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajuste para mostrar 100% da imagem */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: justify;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .project01, .project02, .project03 {
+        width: 80vw; 
+    }
+
+    .swiper {
+        height: 250px; 
+    }
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #9B59B6;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons a {
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.icons a:hover {
+    color: #9B59B6;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        gap: 10px;
+    }
+
+    .icons a {
+        font-size: 18px;
+    }
+}
