@@ -477,10 +477,16 @@ a {
 }
 
 @media (max-width: 768px) {
-    .project01, .project02, .project03 {
+    .project02, .project04 {
         width: 80vw; 
         display: flex;
         flex-direction: column;
+    }
+
+    .project01,  .project03 {
+        width: 80vw; 
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .swiper {
