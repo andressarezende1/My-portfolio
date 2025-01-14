@@ -212,6 +212,29 @@ a {
         font-size: 20px;
     }
 }
+
+/*Animações*/
+[data-anime="top"] {
+    opacity: 0;  /* Começa invisível */
+    transform: translate3d(0, -50px, 0);  /* Inicia deslocado para cima */
+    transition: opacity 0.9s, transform 0.9s;  /* Transição suave */
+}
+
+[data-anime="left"] {
+    opacity: 0;   
+    transition: opacity 1.9s, transform 2.9s; 
+}
+
+[data-anime="right"] {
+    opacity: 0; 
+    transition: opacity 1.9s, transform 2.9s;   
+}
+
+[data-anime].animate {
+    opacity: 1;  /* Torna o elemento visível */
+    transform: translate3d(0, 0, 0);  /* Move o elemento para sua posição original */
+}
+
 /* Estilização seção About */
 
 #about {
@@ -240,12 +263,23 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    height: 250px; 
+    height: 380px;
     width: 18vw; 
     overflow: hidden;
-    transition: transform 0.3s ease;
+    animation: keyphoto 0.8s ease forwards;
 }
 
+@keyframes keyphoto {
+    0% {
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.6); 
+    }
+
+    100% {
+        width: 380px;
+        background-color: #fff;
+    }
+}
 .photo::after {
     content: ""; 
     position: absolute; 
@@ -286,7 +320,6 @@ a {
     margin: 0;
 }
 
-
 @media(max-width: 1024px) {
     .about-container {
         gap: 50px; /* Menor espaçamento entre os itens em telas menores */
@@ -294,7 +327,7 @@ a {
 
     .photo {
         width: 25vw; /* Reduz a largura da imagem em telas menores */
-        height: 30vw; /* Ajusta a altura da imagem */
+        height: 50vw; /* Ajusta a altura da imagem */
     }
 
     .text {
@@ -310,7 +343,6 @@ a {
     }
 }
 
-
 @media(max-width: 768px) {
     .about-container {
         gap: 30px;
@@ -320,7 +352,7 @@ a {
 
     .photo {
         width: 60vw; /* Aumenta a largura da foto para ocupar mais espaço */
-        height: 40vw; /* Ajusta a altura */
+        height: 50vw; /* Ajusta a altura */
     }
 
     .text {
@@ -337,7 +369,6 @@ a {
     }
 }
 
-
 @media(max-width: 480px) {
     .title-about {
         font-size: 28px; /* Diminui o tamanho da fonte do título */
@@ -345,7 +376,7 @@ a {
 
     .photo {
         width: 80vw; /* Foto ocupa quase toda a largura da tela */
-        height: 60vw; /* Ajusta a altura */
+        height: 80vw; /* Ajusta a altura */
     }
 
     .text {
@@ -372,14 +403,27 @@ a {
     background-color: white;
 }
 
-.education-container, .experience-container{
+.education-container, .experience-container {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 40vw;
     gap: 10px;
     line-height: 1.5;
-    padding: 0; 
+    padding: 0;
+    opacity: 0; /* Inicialmente invisível */
+    animation: keyedu 0.5s ease forwards;
+}
+
+@keyframes keyedu {
+    0% {
+        transform: translateX(-50px); /* Começa acima da posição inicial */
+        opacity: 0; /* Começa invisível */
+    }
+    100% {
+        transform: translateX(0); /* Finaliza na posição original */
+        opacity: 1; /* Fica visível */
+    }
 }
 
 .title {
@@ -395,7 +439,6 @@ a {
     text-align: center;
     font-weight: 800;
 }
-
 
 .experience01, .experience02 p {
     text-align: justify;
@@ -433,6 +476,7 @@ a {
     padding: 50px 0px;
     background-color: white;
     gap: 20px;
+    padding-bottom: 0px;
 }
 
 .project01,  .project03 {
@@ -469,11 +513,20 @@ a {
     text-align: left; 
     margin-right: 20px;
     margin-left: 20px;
+    text-align: justify;
 }
 
 .info h3 {
     font-size: 1.5rem; 
     font-weight: bold;
+}
+
+.p {
+    font-size: 16px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
 }
 
 @media (max-width: 768px) {
@@ -501,6 +554,7 @@ a {
     }
 }
 
+/*Estilização do Footer*/
 footer {
     padding: 20px;
     text-align: center;
