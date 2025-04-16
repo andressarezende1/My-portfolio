@@ -7,13 +7,13 @@ Também disponibilizo links para o meu GitHub e currículo, para quem quiser ace
 <h3> 💻 Desenvolvimento </h3>
  Comecei planejando o layout, as cores e toda a estrutura do site. Busquei inspirações que refletissem meu estilo e me ajudassem a transmitir minha personalidade através da interface. O desenvolvimento foi feito em etapas, sempre observando se o resultado estava alinhado com o que eu imaginava — e ajustando sempre que necessário.
 
-#
+##
 <h3> 📂 Estrutura do projeto  </h3>
 <br>1️⃣ Relatando o inicio da minha paixão pela tecnologia.
 <br>2️⃣ Minha formação e minhas experiencias. 
 <br>3️⃣ Apresentação dos meus projetos pessoais que desenvolvi.
 
-
+##
 <h3>Nesse pequeno projeto aprendi sobre: </h3>
  <br>📌 Aprimoramento de HTML, CSS e JS
  <br>📌 Conhecimento com o biblioteca Swiper
