@@ -46,5 +46,4 @@ Também disponibilizo links para o meu GitHub e currículo, para quem quiser ace
 <a href="https://fonts.google.com/">
     <img align="center" alt="Rafa-React" height="30" width="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUP5DizHClmiEANb7443enra5h_mzpCzC_tQ&s">
 </a>
-
 </div>
