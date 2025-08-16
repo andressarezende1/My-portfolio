@@ -1,4 +1,4 @@
-<h1>Olá pessoal, apresento a vocês a <b> o meu ✨Portfólio✨ </b> </h1>
+<h1>Olá pessoal, apresento a vocês <b> o meu ✨Portfólio✨ </b> </h1>
 
 Gostaria de compartilhar com vocês o meu portfólio pessoal, que reflete a minha trajetória e evolução no mundo da tecnologia. Neste espaço, você pode conhecer meu trabalho como estudante, minha experiência profissional e explorar os projetos que desenvolvi até o momento.
 Também disponibilizo links para o meu GitHub e currículo, para quem quiser acessar mais informações sobre min.
