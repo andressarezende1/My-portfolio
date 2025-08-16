@@ -1,4 +1,4 @@
-// Do Swiper (Carrosel)
+// Inicialização do Swiper (carrossel)
 var swiper = new Swiper(".mySwiper", {
     pagination: {
         el: ".swiper-pagination",
@@ -6,10 +6,10 @@ var swiper = new Swiper(".mySwiper", {
     });
 
 
-  // Do botão de rolar para o topo 
+// Do botão scroll-top
 const scrollToTopButton = document.getElementById('scrollToTopButton');
 
-// Função ao evento de rolagem da janela
+// Evento para determinar o aparecimento do botão scroll-top na página
 window.onscroll = function() {
     if (document.documentElement.scrollTop > 50) {
         scrollToTopButton.style.display = "block"; 
@@ -18,7 +18,7 @@ window.onscroll = function() {
     }
 };
 
-// Função ao evento de clique no botão 
+// Evento quando clicar botão scroll-top
 scrollToTopButton.onclick = function() {
     window.scrollTo({ 
         top: 0,           
@@ -27,9 +27,10 @@ scrollToTopButton.onclick = function() {
 };
 
 
-// Seleciona todos os elementos com data-anime="top"
+// Seleciona todos os elementos com o atributo data-anime
 const targets = document.querySelectorAll('[data-anime]');
-const animationClass = 'animate';  // Nome da classe para animação
+const animationClass = 'animate';  // Nome da classe CSS que será adicionada para animar
+
 
 // Função para verificar se o elemento está visível na tela
 function isElementInViewport(element) {
@@ -39,21 +40,21 @@ function isElementInViewport(element) {
     );
 }
 
-// Para cada elemento 'target', verifica se ele está visível e aplica a animação
+// Aplica ou remove a classe de animação com base na visibilidade do elemento
 function animeScroll() {
     targets.forEach(function(target) {
         if (isElementInViewport(target)) {
-            target.classList.add(animationClass);  // Adiciona a classe de animação
+            target.classList.add(animationClass);  
         } else {
-            target.classList.remove(animationClass);  // Remove a classe de animação
+            target.classList.remove(animationClass); 
         }
     });
 }
 
-// Chama a função animeScroll assim que a página carregar
+// Executa a animação ao carregar a página
 animeScroll();
 
-// Adiciona um event listener para chamar animeScroll ao rolar a página
+// Executa a animação ao rolar a página
 if (targets.length) {
     window.addEventListener('scroll', function() {
         animeScroll();

@@ -1,42 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Andressa Rezende, estudante de Engenharia de Software e desenvolvedora Front-End.">
+    <meta name="author" content="Andressa Rezende">
     <title>My Portfolio - Andressa Rezende</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header>
-        <div class="logo"><h1>ANDRESSA</h1></div>
+        <div class="logo"><span>ANDRESSA</span></div>
         <nav>
             <div class="nav-links-container">
                 <ul>
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#education-experience">EDUCATION & EXPERIENCE</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                 </ul>  
             </div>      
-                <div class="icons">
-                    <a href="https://www.linkedin.com/in/andressa-rezende-087582299/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/andressarezende1">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="/curriculo.pdf">
-                        <i class="fa-solid fa-download"></i>
-                    </a>
-                </div>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/andressa-rezende-087582299/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/andressarezende1">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="/assets/doc/curriculo.pdf">
+                    <i class="fa-solid fa-download"></i>
+                </a>
+            </div>
             
         </nav>
     </header>
 
     <main>
-        <button id="scrollToTopButton">
-            <i class="fa-solid fa-arrow-up"></i>
+        <button id="scrollToTopButton"> 
+            <i class="fa-solid fa-arrow-up"></i> 
         </button>
 
         <section id="about"> 
@@ -44,38 +46,28 @@
             <div class="about-container">
                 <div class="photo"></div>
                 <div class="text">
-                    <h3>Andressa Rezende, estudante de Engenharia de Software, Estagiária de QA e Técnica em Informática </h3>
+                    <h3>Andressa Rezende, estudante de Engenharia de Software e Técnica em Informática </h3>
                     <div class="description" >
-                        <p>Sou uma estudante apaixonada por tecnologia, atualmente no terceiro período de Engenharia de Software. Meu interesse pela área começou no curso técnico em Informática, onde decidi seguir meu caminho na tecnologia. A cada dia, me desafio a aprofundar meus conhecimentos em desenvolvimento de software, com um foco especial em Front-End. <br><br>
-                        Estou sempre em busca de aprimoramento, trabalhando em projetos pessoais que enfrentam novos desafios e me ajudam a crescer como profissional. Estou comprometida a ajudar e contribuir de maneira significativa a partir do conhecimento e habilidades que adquiri ao longo da minha jornada em Engenharia de Software.</p>
+                        <p>Sou uma estudante interessada por tecnologia, atualmente no quarto período de Engenharia de Software. Meu interesse pela área começou no curso técnico em Informática, onde decidi seguir meu caminho na tecnologia. <br><br>
+                        A cada dia, me desafio a aprofundar meus conhecimentos em desenvolvimento de software, com um foco especial em Front-End. Estou sempre em busca de aprimoramento, trabalhando em projetos pessoais que enfrentam novos desafios e me ajudam a crescer como profissional.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="education-experience">
-            <div class="education-experience">
+        <section id="education">
+            <div class="education">
+                <div class="title"> <h3>MY EDUCATION</h3> </div>  
                 <div class="education-container">
-                    <div class="title"> <h3>MY EDUCATION</h3> </div>  
                     <div class="education01">
-                        <h3 data-anime="left"> <i class="fa-solid fa-graduation-cap"></i> Engenharia de Software</h3>
+                        <h3 data-anime="opacity"> <i class="fa-solid fa-graduation-cap"></i> Engenharia de Software</h3>
                         <p><strong>Instituição:</strong> Universidade Evangélica de Goiás/UniEvangélica - Anápolis/GO</p>
                         <p><strong>Período:</strong> 2024 - presente</p>
                     </div>
                     <div class="education02">
-                        <h3 data-anime="left"> <i class="fa-solid fa-graduation-cap"></i> Técnico em informática</h3>
+                        <h3 data-anime="opacity"> <i class="fa-solid fa-graduation-cap"></i> Técnico em informática</h3>
                         <p><strong>Instituição:</strong> Instituto Federal de Goiás/IFG - Uruaçu/GO</p>
                         <p><strong>Período:</strong> 2021 - 2023</p>
-                    </div>
-                </div>
-
-                <div class="experience-container">
-                    <div class="title"> <h3>MY EXPERIENCE</h3> </div>  
-                    <div class="experience01">
-                        <h3 data-anime="right">Estágio em Quality Assurance (QA)</h3>
-                        <p><strong>Empresa:</strong> SoftNews - Anápolis/GO</p>
-                        <p><strong>Período:</strong> 10/2024 - presente</p>
-                        <p><strong>Descrição:</strong> Sou responsável pelo contato inicial com os clientes, coletando informações de forma clara e eficiente. Repasso questionários para entender suas necessidades e garantir a coleta de dados relevantes. Também mantenho o Trello atualizado, controlando as atividades e processos internos.</p>
                     </div>
                 </div>
             </div>
@@ -84,84 +76,62 @@
         <section id="projects"> 
             <div class="title"><h3>MY PROJECTS</h3></div>
             <div class="projects-container">
+
                 <div class="project01">
-                    <div class="swiper mySwiper">
+                    <div class="info">
+                        <h3 data-anime="opacity">Website de Apresentação Profissional</h3>
+                        <p class="p" data-anime="right" >Versão Web e Mobile</p>
+                        <p><strong>Descrição:</strong> Website para a profissional Dra. Aline Rezende, com o objetivo de fortalecer sua presença online. Ter um site profissional aumenta a credibilidade e visibilidade, facilita a comunicação direta com o público e torna o acesso aos seus serviços mais ágil. <br> <br>
+                            <strong>Ferramentas utilizadas:</strong> VsCode. <br>
+                            <strong>Tecnologias Utilizadas:</strong> HTML e CSS. <br>
+                            <strong>Bibliotecas Utilizadas:</strong> Font Awesome e Google Fonts </p>
+                        <div class="icons">
+                            <a href="https://github.com/andressarezende1/Agende-sua-Consulta-Dra-Aline-Rezende"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://agende-sua-consulta-dra-aline-rezende.vercel.app/"><i class="fa-solid fa-eye"></i></i></a>
+                        </div>
+                    </div>
+
+                    <div class="swiper mySwiper" data-anime="bottom">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"> <img src="img/LandNike/LandNike(1).png" alt=""></div>
-                            <div class="swiper-slide"> <img src="img/LandNike/LandNike(2).png" alt=""></div>
-                            <div class="swiper-slide"> <img src="img/LandNike/LandNike(3).png" alt=""></div>
+                            <div class="swiper-slide"> <img src="./assets/img/PortAline(1)/PortAline(1).png" alt=""></div>
+                            <div class="swiper-slide"> <img src="./assets/img/PortAline(1)/PortAline(2).png" alt=""></div>
+                            <div class="swiper-slide"> <img src="./assets/img/PortAline(1)/PortAline(3).png" alt=""></div>
+                            <div class="swiper-slide"> <img src="./assets/img/PortAline(1)/PortAline(4).png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="project02">
+                    <div class="swiper mySwiper" data-anime="bottom">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img src="./assets/img/LandNike/LandNike(1).png" alt=""></div>
+                            <div class="swiper-slide"> <img src="./assets/img/LandNike/LandNike(2).png" alt=""></div>
+                            <div class="swiper-slide"> <img src="./assets/img/LandNike/LandNike(3).png" alt=""></div>
+                            <div class="swiper-slide"> <img src="./assets/img/LandNike/LandNike(4).png" alt=""></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
 
                     <div class="info">
-                        <h3 data-anime="right">Landing Page de um produto à venda</h3>
-                        <p class="p">Versao Web e Mobile</p>
-                        <p><strong>Descrição:</strong> Esta é minha primeira landing page de vendas. Composta por uma breve apresentação produto, destaque dos benefícios do Tênis e um formulário que permite que os usuários se conectem com a equipe de vendas. <br> <br>
+                        <h3 data-anime="opacity">Landing Page de um produto à venda</h3>
+                        <p class="p" data-anime="right" >Versão Web e Mobile</p>
+                        <p><strong>Descrição:</strong> Landing Page venda de um produto, sendo composta por uma breve apresentação produto, destaque dos benefícios do Tênis e um formulário que permite que os usuários se conectem com a equipe de vendas. <br> <br>
                         <strong>Ferramentas utilizadas:</strong> VsCode e Figma. <br>
                         <strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript e React (como Framework) <br>
                         <strong>Bibliotecas Utilizadas:</strong> React Icons e Google Fonts </p>
                         <div class="icons">
                             <a href="https://github.com/andressarezende1/LandingPage-NikeVendas"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://nike-vendas-landing-page.vercel.app/"><i class="fa-solid fa-eye"></i></i></a>
+                            <a href="https://nike-vendas-landing-page.vercel.app/"><i class="fa-solid fa-eye"></i></a>
+                            <a href="https://www.figma.com/design/JAUp8l2pS6fgrGVPKhF8JO/Vendas--Landing-Page?node-id=0-53&t=PIzKmlZoy4gDVuas-0"><i class="fa-brands fa-figma"></i></a>
                         </div>
                     </div>
                 </div>
         
-                <div class="project02">
-                    <div class="info">
-                        <h3 data-anime="left">Portfolio de um profissional na área de Odontologia</h3>
-                        <p class="p">Versao Web e Mobile</p>
-                        <p><strong>Descrição:</strong> Um portfolio simples e atraente foi criada por mim para minha irmã, uma dentista que deseja mostrar seus tratamentos na área de Odontologia. Com textos claros e um espaço dedicado aos tratamentos oferecidos, a página também oferece diversas formas de contato.e<br> <br>
-                            <strong>Ferramentas utilizadas:</strong> VsCode e Figma. <br>
-                            <strong>Tecnologias Utilizadas:</strong> HTML, CSS, JavaScript e React (como Framework) <br>
-                            <strong>Bibliotecas Utilizadas:</strong> React Icons, React Router e Google Fonts </p>
-                        <div class="icons">
-                            <a href="https://github.com/andressarezende1/Portfolio-AlineRezende01"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://template-odonto.vercel.app/"><i class="fa-solid fa-eye"></i></i></a>
-                        </div>
-                    </div>
-
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"> <img src="img/PortAline(1)/PortfAline1(1).png" alt=""></div>
-                            <div class="swiper-slide"> <img src="img/PortAline(1)/PortfAline1(2).png" alt=""></div>
-                            <div class="swiper-slide"> <img src="img/PortAline(1)/PortfAline1(3).png" alt=""></div>
-                            <div class="swiper-slide"> <img src="img/PortAline(1)/PortfAline1(4).png" alt=""></div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                
                 <div class="project03">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"> <img src="img/PortfAline(2)/PortfAline2(1).png" alt=""></div>
-                            <div class="swiper-slide"> <img src="img/PortfAline(2)/PortfAline2(2).png" alt=""></div>
-                            <div class="swiper-slide"> <img src="img/PortfAline(2)/PortfAline2(3).png" alt=""></div>
-                            <div class="swiper-slide"> <img src="img/PortfAline(2)/PortfAline2(4).png" alt=""></div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-
                     <div class="info">
-                        <h3 data-anime="right">Portfolio simples de um profissonal</h3>
-                        <p class="p">Versao Web e Mobile</p>
-                        <p><strong>Descrição:</strong> Outro portfolio simples e atraente para minha irmã, uma dentista, com o intuito de seus pacientes ou futuros conhecer-la mais e quais os tratamentos ela oferece. Com textos claros sobre ela e um espaço dedicado aos tratamentos oferecidos, além da página que contem um pequeno formulario para contato. <br> <br>
-                            <strong>Ferramentas utilizadas:</strong> VsCode. <br>
-                            <strong>Tecnologias Utilizadas:</strong> HTML, CSS e JavaScript. <br>
-                            <strong>Bibliotecas Utilizadas:</strong> Font Awesome e Google Fonts </p>
-                        <div class="icons">
-                            <a href="https://github.com/andressarezende1/Portfolio-AlineRezende02"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://portfolio-aline-rezende-01.vercel.app/"><i class="fa-solid fa-eye"></i></i></a>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="project04">
-                    <div class="info">
-                        <h3 data-anime="left">Calculadora de Dose de Anestésico Local para Odontologia</h3>
-                        <p class="p">Versao Web e Mobile</p>
+                        <h3 data-anime="opacity">Calculadora de Dose de Anestésico Local para Odontologia</h3>
+                        <p class="p" data-anime="right" >Versão Web e Mobile</p>
                         <p><strong>Descrição:</strong> Ao observar minha irmã realizando cálculos manuais para a dosagem de anestésicos locais na Odontologia, programei uma calculadora simples e útil, fornecendo o resultado em miligramas (mg) e em tubetes.<br> <br>
                             <strong>Ferramentas utilizadas:</strong> Sublime (inicialmente) e VsCode (atualmente) <br>
                             <strong>Tecnologias Utilizadas:</strong> HTML, CSS e JavaScript <br> </p>
@@ -171,31 +141,29 @@
                         </div>
                     </div>
 
-                    <div class="swiper mySwiper">
+                    <div class="swiper mySwiper" data-anime="bottom">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"> <img src="img/Calc/Calc(1).png" alt=""></div>
-                            <div class="swiper-slide"> <img src="img/Calc/Calc(2).png" alt=""></div>
+                            <div class="swiper-slide"> <img src="./assets/img/Calc/Calc(1).png" alt=""></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div> 
         </section>
-        
     </main>
 
     <footer>
         <div class="footer-content">
-            <p>Andressa Rezende</p>
             <div class="icons">
                 <a href="https://www.linkedin.com/in/andressa-rezende-087582299/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/andressarezende1"><i class="fa-brands fa-github"></i></a>
-                <a href="/curriculo.pdf"><i class="fa-solid fa-download"></i></a>
+                <a href="./assets/doc/curriculo.pdf"><i class="fa-solid fa-download"></i></a>
             </div>
+            <p style="font-size: 12px;">@Andressa Rezende</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="javascript.js"> </script>
+    <script src="./assets/javascript.js"> </script>
 </body>
 </html>
