@@ -1,13 +1,16 @@
-.education{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    height: auto;
-    padding: 20px;
+#education-experience {
     background-color: white;
 }
 
-.education-container {
+.education, .experience {
+    width: 60%; 
+    height: auto;
+    gap: 120px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.education-experience-container {
     display: flex;
     flex-direction: none;
     height: auto;
@@ -32,13 +35,18 @@
     font-weight: 800;
 }
 
+p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media(max-width: 768px) {
 
-    .education-container {
+    .education-experience-container {
         flex-direction: column;
     }
 
-    .education01, .education02{
+    .education-experience01, .education-experience02{
         padding-left: 40px;
         align-items: center;
     }
