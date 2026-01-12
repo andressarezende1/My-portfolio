@@ -3,7 +3,7 @@
 }
 
 .education, .experience {
-    width: 60%; 
+    width: 85%; 
     height: auto;
     gap: 120px;
     padding: 20px;
@@ -35,19 +35,22 @@
     font-weight: 800;
 }
 
-p {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 @media(max-width: 768px) {
+
+    .education, .experience {
+    width: 90%; 
+    height: auto;
+    gap: 120px;
+    padding: 0px;
+    margin: 0 auto;
+}
 
     .education-experience-container {
         flex-direction: column;
     }
 
     .education-experience01, .education-experience02{
-        padding-left: 40px;
+        padding-left: -10px;
         align-items: center;
     }
 }

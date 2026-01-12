@@ -10,11 +10,12 @@
 
 .about-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap; 
     height: auto;
     padding: 20px;
-    gap: 120px;
+    gap: 20px;
+    width: 85%;
 }
 
 .photo {
@@ -27,6 +28,7 @@
     height: 290px;
     width: 18vw; 
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .photo:hover {
@@ -42,6 +44,7 @@
     line-height: 1.5;
     text-align: justify; 
     gap: 10px;
+    margin-top: -20px
 }
 
 .text h3 {
@@ -52,8 +55,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40vw; 
-    margin: 0;
+    width: 50vw; 
+    margin: 0 auto;
 }
 
 @media(max-width: 1024px) {
